@@ -1,0 +1,133 @@
+{
+  "blenderVersion": "5.2.3 LTS",
+  "sources": {
+    "cottage.blend": {
+      "bytes": 12966302,
+      "meshCount": 1,
+      "vertexCount": 63211,
+      "missingTextures": [],
+      "clips": {}
+    },
+    "terrain-layout.blend": {
+      "bytes": 20456812,
+      "meshCount": 1,
+      "vertexCount": 111426,
+      "missingTextures": [],
+      "clips": {}
+    },
+    "cloud.blend": {
+      "bytes": 131917,
+      "meshCount": 1,
+      "vertexCount": 950,
+      "missingTextures": [],
+      "clips": {}
+    },
+    "cow-animation.blend": {
+      "bytes": 9546967,
+      "meshCount": 1,
+      "vertexCount": 27699,
+      "missingTextures": [],
+      "clips": {
+        "Graze": {
+          "frames": [
+            1,
+            97
+          ],
+          "durationSeconds": 4.0,
+          "sampleFrame": 25,
+          "maximumVertexDisplacement": 0.009686535224318504,
+          "loopSeamDisplacement": 0.0
+        },
+        "Walk": {
+          "frames": [
+            1,
+            49
+          ],
+          "durationSeconds": 2.0,
+          "sampleFrame": 13,
+          "maximumVertexDisplacement": 0.07557045668363571,
+          "loopSeamDisplacement": 0.0
+        }
+      },
+      "boneCount": 13
+    },
+    "sheep-animation.blend": {
+      "bytes": 13605718,
+      "meshCount": 1,
+      "vertexCount": 26725,
+      "missingTextures": [],
+      "clips": {
+        "Graze": {
+          "frames": [
+            1,
+            97
+          ],
+          "durationSeconds": 4.0,
+          "sampleFrame": 25,
+          "maximumVertexDisplacement": 0.01248757541179657,
+          "loopSeamDisplacement": 0.0
+        },
+        "Walk": {
+          "frames": [
+            1,
+            49
+          ],
+          "durationSeconds": 2.0,
+          "sampleFrame": 13,
+          "maximumVertexDisplacement": 0.07248563319444656,
+          "loopSeamDisplacement": 0.0
+        }
+      },
+      "boneCount": 13
+    },
+    "horse-animation.blend": {
+      "bytes": 17642140,
+      "meshCount": 1,
+      "vertexCount": 29412,
+      "missingTextures": [],
+      "clips": {
+        "Graze": {
+          "frames": [
+            1,
+            97
+          ],
+          "durationSeconds": 4.0,
+          "sampleFrame": 25,
+          "maximumVertexDisplacement": 0.012017291970551014,
+          "loopSeamDisplacement": 0.0
+        },
+        "Walk": {
+          "frames": [
+            1,
+            49
+          ],
+          "durationSeconds": 2.0,
+          "sampleFrame": 13,
+          "maximumVertexDisplacement": 0.08083141595125198,
+          "loopSeamDisplacement": 0.0
+        }
+      },
+      "boneCount": 13
+    },
+    "koi-swim.blend": {
+      "bytes": 164221,
+      "meshCount": 1,
+      "vertexCount": 1510,
+      "missingTextures": [],
+      "clips": {
+        "Swim": {
+          "frames": [
+            1,
+            49
+          ],
+          "durationSeconds": 2.0,
+          "sampleFrame": 13,
+          "maximumVertexDisplacement": 0.3169504404067993,
+          "loopSeamDisplacement": 0.0
+        }
+      },
+      "boneCount": 3
+    }
+  },
+  "result": "passed"
+}

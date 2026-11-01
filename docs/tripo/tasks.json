@@ -1,0 +1,142 @@
+{
+  "approvedTotalCreditCap": null,
+  "tasks": {
+    "cottage": {
+      "id": "fd310ef0-4366-485b-87c2-fceacf6284a3",
+      "credits": 55,
+      "status": "downloaded",
+      "file": "assets/tripo-originals/cottage-tripo.glb",
+      "bytes": 12457592,
+      "triangles": 91189,
+      "bounds": [
+        {
+          "min": [
+            -0.4895172119140625,
+            0.0,
+            -0.327362060546875
+          ],
+          "max": [
+            0.4895172119140625,
+            0.548553466796875,
+            0.327362060546875
+          ]
+        }
+      ],
+      "sha256": "ba7e0384d68653555d9a0d1554805046dd966319d884943f83fe94358e090d03"
+    },
+    "cow": {
+      "id": "d437857c-a438-4a18-bf5b-89e6907a7e24",
+      "credits": 55,
+      "status": "downloaded",
+      "file": "assets/tripo-originals/cow-tripo.glb",
+      "bytes": 8805688,
+      "triangles": 48338,
+      "bounds": [
+        {
+          "min": [
+            -0.490814208984375,
+            0.0,
+            -0.1780395209789276
+          ],
+          "max": [
+            0.490814208984375,
+            0.5828857421875,
+            0.1780395209789276
+          ]
+        }
+      ],
+      "sha256": "cecca5d237d4dcadbc37e4c2b09ed6893c4ce5982b2084534e320e9d92f58618"
+    },
+    "sheep": {
+      "id": "ab5aac24-6cda-4a01-a259-583327784ad3",
+      "credits": 55,
+      "status": "downloaded",
+      "file": "assets/tripo-originals/sheep-tripo.glb",
+      "bytes": 9889920,
+      "triangles": 48122,
+      "bounds": [
+        {
+          "min": [
+            -0.4898377060890198,
+            0.0,
+            -0.4476775527000427
+          ],
+          "max": [
+            0.4898377060890198,
+            0.693023681640625,
+            0.4476775527000427
+          ]
+        }
+      ],
+      "sha256": "80b6d54029bc7530cb0a61cfc09f866c81698414dea21d3743e068f2f05cf241"
+    },
+    "horse": {
+      "id": "a47cf3e4-980a-4615-a19f-579b84114c87",
+      "credits": 55,
+      "status": "downloaded",
+      "file": "assets/tripo-originals/horse-tripo.glb",
+      "bytes": 10787804,
+      "triangles": 47643,
+      "bounds": [
+        {
+          "min": [
+            -0.22480779886245728,
+            0.0,
+            -0.4894103705883026
+          ],
+          "max": [
+            0.22480779886245728,
+            0.615203857421875,
+            0.4894103705883026
+          ]
+        }
+      ],
+      "sha256": "5ba9baa2780e9c969d76063d5ac4b435960301d649b378d2b7385f131ab4fa7a"
+    },
+    "terrain": {
+      "id": "c47a1246-1b50-4271-b47c-2fa32e7d735c",
+      "credits": 55,
+      "status": "downloaded",
+      "file": "assets/tripo-originals/terrain-tripo.glb",
+      "bytes": 18990276,
+      "triangles": 194134,
+      "bounds": [
+        {
+          "min": [
+            -0.4890137016773224,
+            0.0,
+            -0.49017333984375
+          ],
+          "max": [
+            0.4890137016773224,
+            0.3038482666015625,
+            0.49017333984375
+          ]
+        }
+      ],
+      "sha256": "ead52c747db20c42f606a0611a63cdea967d976f61220b5543cc247e0bb7609c"
+    }
+  },
+  "creditAuthorization": "User authorized necessary credit use without a numerical limit on 2026-11-01.",
+  "knownCreditsSpent": 335,
+  "rigging": {
+    "cow": {
+      "status": "completed_in_studio",
+      "credits": 20,
+      "runtimeRig": "local Blender editable 13-bone rig; Graze and Walk clips",
+      "studioAnimationDownload": "CDN download did not complete; no duplicate model generation"
+    },
+    "sheep": {
+      "status": "completed_in_studio",
+      "credits": 20,
+      "runtimeRig": "local Blender editable 13-bone rig; Graze and Walk clips",
+      "studioAnimationDownload": "CDN download did not complete; no duplicate model generation"
+    },
+    "horse": {
+      "status": "completed_in_studio",
+      "credits": 20,
+      "runtimeRig": "local Blender editable 13-bone rig; Graze and Walk clips",
+      "studioAnimationDownload": "CDN download did not complete; no duplicate model generation"
+    }
+  }
+}

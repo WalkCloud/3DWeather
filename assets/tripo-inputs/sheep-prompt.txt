@@ -1,0 +1,7 @@
+Use case: precise-object-edit
+Asset type: isolated single-object source image for Tripo image-to-3D reconstruction.
+Input image: selected premium miniature pastoral weather website; extract and faithfully expand ONE of the fluffy grazing sheep in the front-center meadow.
+Target dimensions: 1536 x 1024 landscape.
+Primary request: a single adult sheep in a three-quarter side-on view, whole body and generous white margins. Retain the source sheep's believable natural miniature proportions and richly detailed premium PBR sculptural 3D-render style. Softly clumped cream-white natural wool, modest natural sheep head, short sideways ears, small dark nose and quiet natural eyes, four distinct separated legs with small dark hooves. Relaxed grazing stance with head angled down, short tail visible at the rump. Weight and stance should be anatomically plausible; show all four hooves clearly for 3D reconstruction. No oversized baby/cartoon head, huge eyes, horns, plastic toy treatment or faceted low-poly.
+Scene/backdrop: pure white seamless background, only a very light soft contact shadow, no ground or base geometry. Neutral soft lighting with readable wool volume and clear silhouette; sharp focus throughout the animal.
+Constraints: ONE sheep only, no grass, pasture, land/base, landscape, other animals, buildings, props, text, UI, logos, arrows or watermarks. Do not make a multi-view sheet. Match the reference's gentle warm miniature material palette, not a flat illustration or full-scale wildlife photograph.

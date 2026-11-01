@@ -1,0 +1,39 @@
+# Prototype Instructions
+
+Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
+
+If CUA browser APIs report disabled in this environment, native Chrome control through `cua.getApp("com.google.Chrome")` is a verified fallback for screenshots and interaction. Use it before asking the user to change settings. Native URL entry should use `paste`, because `typeText` can drop URL punctuation under the active input method.
+
+Before making substantial visual changes, use the Product Design plugin's `get-context` skill when the visual source is unclear or no longer matches the current goal. When the user gives durable prototype-specific design feedback, preferences, or decisions, record them in `AGENTS.md`.
+
+When implementing from a selected generated mock, treat that image as the source of truth for layout, component anatomy, density, spacing, color, typography, visible content, and hierarchy.
+
+Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.
+
+## Accepted product direction
+
+- Active objective explicitly includes completing all assets AND the frontend using Three.js. The user has Blender locally; use it for editable asset/animation sources. No weather backend is required yet. Do not end with only an asset sample.
+- The user authorized necessary Tripo credit use without a numerical limit on 2026-11-01, superseding the earlier 275-credit cap. Do not ask for credit authorization again within this scope. Do not buy another membership/subscription.
+
+- User selected the first image of the latest miniature ideation set: `docs/visual-target.png` (original generated image `exec-8acff5de-771c-4b29-b435-5931794b6799.png`). Do not confuse it with the earlier full-scale countryside concepts.
+- A real, finite miniature 3D pasture with warm cottage, meadow in front, pond beside it, and a green hill behind. All sides must exist. Mouse dragging orbits around the vertical Y axis through 360 degrees at a gently elevated fixed angle.
+- Weather card stays top-left and transparent. Four thin vertical technical gauges stay on the right: wind speed, temperature, humidity, UV. UI does not rotate with the scene.
+- Cows, sheep, horses and fish must be separate movable assets. Rain reduces exposed animals, thunderstorms add lightning, snow accumulates and persists across a later sunny day.
+- User explicitly rejected generic library models as visibly different from the selected image. Do not use the currently downloaded candidate GLBs as approved final artwork.
+- User has Tripo Studio (web), not a confirmed developer API account. They purchased membership on 2026-11-01 to enable export. Prioritize image-derived matching models. Verify one cottage sample before producing the rest.
+- Cottage input: `assets/tripo-inputs/cottage-reference.png`. Tripo generation task `fd310ef0-4366-485b-87c2-fceacf6284a3` COMPLETED with 91,189 triangles and 63,211 vertices. It cost 55 credits (3200 -> 3145). Do not submit this generation again.
+- Cottage generation settings: H3.1, high precision, requested 100000 faces, 4K texture, PBR, de-lighting enabled, visibility unlisted (`仅分享`). Front and two reverse/side views inspected in Studio; full 3D structure exists and resembles the chosen cottage. GLB export/download VERIFIED at `assets/tripo-originals/cottage-tripo.glb` (12,457,592 bytes, 91,189 triangles, 3 embedded texture images). Original download retained in `/Users/kevin-mac/Downloads/cottage-tripo.glb`. Reference-matching three-quarter screenshot: `docs/tripo/cottage-complete.jpg`. No regeneration needed.
+- All five image-derived Tripo models are complete and downloaded. Originals are retained under `assets/tripo-originals/`; web runtime copies are under `public/assets/models/`. Cow, sheep, horse have local Blender rigs with Graze/Walk clips; koi has Swim. Do not regenerate completed tasks. See `docs/tripo/tasks.json` for IDs and provenance.
+
+- User clarified on 2026-11-01: this is a browser-based web app, not a mobile app. Desktop is the primary experience; narrow-window checks are only responsive web QA. Do not add device frames, app packaging, app install prompts or native mobile navigation.
+
+- Environment is separate from weather: derive season and daylight phase from the viewer's local clock. Autumn yellows vegetation and drops leaves; winter/snow cover surfaces and show a snowman; night/dusk light the cottage and path lamps.
+- Weather visuals must read believably from the miniature: sunny/cloudy/rain each use different cloud forms and counts; autumn leaves originate at tree crowns and land nearby; rain and snow begin beneath cloud bases and fall to the ground rather than filling the whole sky.
+- Support Chinese and English in the web UI with a visible language toggle and persist the choice. Keep desktop as the primary web experience.
+- User rejected both photographic billboard clouds and the smooth solid/metaball cloud meshes. Clouds must have recognizable natural cloud silhouettes, translucent feathered edges, irregular internal density and soft self-shadowing; avoid sausage/blob shapes, detached beads, and an oversized low ceiling obscuring the cottage/hill. Preserve full 360-degree volume and weather-dependent cloud anatomy.
+- Cloudy weather needs coherent diffuse lighting across sky, clouds, cottage, vegetation and shadows. Do not leave a sunny-looking ground beneath gray clouds. Keep soft cloud edges while retaining visible cloud-base shading and internal billows; uniformly blurred white patches are not acceptable.
+- Rain requires separate light, moderate and heavy states. Cloud bands must sit naturally above the island with stable horizontal bases, coherent orientation and no awkward top cropping; check front and rear views. Increasing rain intensity must change cloud anatomy, depth, coverage, darkness, particle density, streak length and scene lighting. Heavy rain does not imply lightning; thunderstorm stays separate. Keep Chinese/English labels and the future provider boundary in sync.
+- Rear mountain/summit cloud coverage is required; place clouds over actual hill/meadow/side zones in world space and verify rear and side views, not just the frontal screenshot. Falling leaves must detach from the retained model's real tree-canopy surface points and settle on bare terrain near those trees; no guessed spawn zones or height offsets above crowns. Thunderstorms need clearly visible cloud-internal illumination followed by branched 3D lightning below cloud bases. Keep thunder sound optional, with a user-facing sound toggle and a repeatable lightning preview in the weather menu.
+- Rain must visibly emerge beneath cloud undersides. Transparent cloud volumes must occlude rear precipitation during orbit, rather than allowing rain streaks to be drawn over the cloud faces. Wind displacement starts at zero at the cloud-base emitter and grows as the drop falls.
+- Lightning must likewise emerge from a substantial cloud underside: tuck the root inside the cloud, let nearer cloud volumes mask the bolt/halo, avoid detached wispy-edge origins, and retain clearance above the hill. Cloud-internal illumination remains inside the density volume.
+- Camera framing must stay consistent across weather states: desktop orthographic height remains 14.5 units for sunny, night, clouds, rain, storms and snow. Do not reintroduce weather-driven zoom or target shifts; cloud layouts must fit the shared framing.

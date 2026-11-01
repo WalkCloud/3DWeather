@@ -1,0 +1,223 @@
+{
+  "originals": [
+    {
+      "name": "cottage",
+      "path": "assets/tripo-originals/cottage-tripo.glb",
+      "bytes": 12457592,
+      "sha256": "ba7e0384d68653555d9a0d1554805046dd966319d884943f83fe94358e090d03",
+      "verified": true
+    },
+    {
+      "name": "cow",
+      "path": "assets/tripo-originals/cow-tripo.glb",
+      "bytes": 8805688,
+      "sha256": "cecca5d237d4dcadbc37e4c2b09ed6893c4ce5982b2084534e320e9d92f58618",
+      "verified": true
+    },
+    {
+      "name": "sheep",
+      "path": "assets/tripo-originals/sheep-tripo.glb",
+      "bytes": 9889920,
+      "sha256": "80b6d54029bc7530cb0a61cfc09f866c81698414dea21d3743e068f2f05cf241",
+      "verified": true
+    },
+    {
+      "name": "horse",
+      "path": "assets/tripo-originals/horse-tripo.glb",
+      "bytes": 10787804,
+      "sha256": "5ba9baa2780e9c969d76063d5ac4b435960301d649b378d2b7385f131ab4fa7a",
+      "verified": true
+    },
+    {
+      "name": "terrain",
+      "path": "assets/tripo-originals/terrain-tripo.glb",
+      "bytes": 18990276,
+      "sha256": "ead52c747db20c42f606a0611a63cdea967d976f61220b5543cc247e0bb7609c",
+      "verified": true
+    }
+  ],
+  "runtime": [
+    {
+      "name": "cottage",
+      "path": "public/assets/models/cottage.glb",
+      "bytes": 4954496,
+      "meshes": 1,
+      "skins": 0,
+      "clips": [],
+      "vertexColors": false
+    },
+    {
+      "name": "terrain",
+      "path": "public/assets/models/terrain.glb",
+      "bytes": 9665056,
+      "meshes": 1,
+      "skins": 0,
+      "clips": [],
+      "vertexColors": false
+    },
+    {
+      "name": "cow",
+      "path": "public/assets/models/cow.glb",
+      "bytes": 4725876,
+      "meshes": 1,
+      "skins": 1,
+      "clips": [
+        "Graze",
+        "Walk"
+      ],
+      "vertexColors": false
+    },
+    {
+      "name": "sheep",
+      "path": "public/assets/models/sheep.glb",
+      "bytes": 4918652,
+      "meshes": 1,
+      "skins": 1,
+      "clips": [
+        "Graze",
+        "Walk"
+      ],
+      "vertexColors": false
+    },
+    {
+      "name": "horse",
+      "path": "public/assets/models/horse.glb",
+      "bytes": 5242984,
+      "meshes": 1,
+      "skins": 1,
+      "clips": [
+        "Graze",
+        "Walk"
+      ],
+      "vertexColors": false
+    },
+    {
+      "name": "fish",
+      "path": "public/assets/models/fish.glb",
+      "bytes": 143988,
+      "meshes": 1,
+      "skins": 1,
+      "clips": [
+        "Swim"
+      ],
+      "vertexColors": true
+    },
+    {
+      "name": "autumn-leaf",
+      "path": "public/assets/models/autumn-leaf.glb",
+      "bytes": 2932,
+      "meshes": 1,
+      "skins": 0,
+      "clips": [],
+      "vertexColors": false,
+      "source": "assets/autumn-leaf.blend"
+    }
+  ],
+  "referenceImages": [
+    "cottage-reference.png",
+    "cow-reference.png",
+    "horse-reference.png",
+    "sheep-reference.png",
+    "terrain-reference.png"
+  ],
+  "buildFiles": [
+    "dist/client/index.html",
+    "dist/server/index.js",
+    "dist/.openai/hosting.json"
+  ],
+  "cloudSource": "Five deterministic R8 volumes: cumulus, stratus, light rain, moderate rain, thick rain. OpenVDB and Blender sources retained. src/rain.js defines the rain-intensity visual presets.",
+  "result": "16 app tests passed; native Chrome verified front/rear cloud coverage, tree-local leaves, cloud-internal glow and branched lightning, optional thunder controls. Production/Sites validation recorded in design-qa.md.",
+  "cloudVolumes": [
+    {
+      "name": "cumulus",
+      "path": "public/assets/clouds/cumulus.density.bin",
+      "bytes": 393216,
+      "dimensions": [
+        96,
+        64,
+        64
+      ],
+      "precipitationBases": 128,
+      "occupiedFraction": 0.15086,
+      "source": "assets/cloud-volumes/cumulus.blend",
+      "densitySource": "assets/cloud-volumes/cumulus.vdb"
+    },
+    {
+      "name": "stratus",
+      "path": "public/assets/clouds/stratus.density.bin",
+      "bytes": 393216,
+      "dimensions": [
+        96,
+        64,
+        64
+      ],
+      "precipitationBases": 128,
+      "occupiedFraction": 0.1351,
+      "source": "assets/cloud-volumes/stratus.blend",
+      "densitySource": "assets/cloud-volumes/stratus.vdb"
+    },
+    {
+      "name": "rain",
+      "path": "public/assets/clouds/rain.density.bin",
+      "bytes": 393216,
+      "dimensions": [
+        96,
+        64,
+        64
+      ],
+      "precipitationBases": 128,
+      "occupiedFraction": 0.16293,
+      "source": "assets/cloud-volumes/rain.blend",
+      "densitySource": "assets/cloud-volumes/rain.vdb"
+    },
+    {
+      "name": "rainLight",
+      "path": "public/assets/clouds/rainLight.density.bin",
+      "bytes": 393216,
+      "dimensions": [
+        96,
+        64,
+        64
+      ],
+      "precipitationBases": 128,
+      "occupiedFraction": 0.11686,
+      "source": "assets/cloud-volumes/rainLight.blend",
+      "densitySource": "assets/cloud-volumes/rainLight.vdb"
+    },
+    {
+      "name": "rainModerate",
+      "path": "public/assets/clouds/rainModerate.density.bin",
+      "bytes": 393216,
+      "dimensions": [
+        96,
+        64,
+        64
+      ],
+      "precipitationBases": 128,
+      "occupiedFraction": 0.16255,
+      "source": "assets/cloud-volumes/rainModerate.blend",
+      "densitySource": "assets/cloud-volumes/rainModerate.vdb"
+    }
+  ],
+  "spatialEffects": [
+    {
+      "path": "public/assets/tree-anchors.json",
+      "bytes": 12831,
+      "sha256": "5603e73f556387823bdfb5b7cf296eb5242020435240f6aa38ea4e30b26fa553",
+      "treeCount": 6,
+      "source": "scripts/prepare-tree-effects.py"
+    },
+    {
+      "path": "public/assets/terrain-ground-heights.json",
+      "bytes": 182918,
+      "sha256": "b30fb768811f9f75e11f192c90d331b13552b41e89c4e7f34a0a7999ea0f37ab",
+      "source": "scripts/prepare-tree-effects.py"
+    },
+    {
+      "path": "public/assets/audio/thunder.wav",
+      "bytes": 352044,
+      "sha256": "5fab59035f0195a5cd4c66adbe20fc9a998dca7c1915da4f3a01ad31d9f16abe",
+      "source": "scripts/create-thunder.py"
+    }
+  ]
+}
