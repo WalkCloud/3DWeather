@@ -9,3 +9,6 @@ dist/
 
 # Logs
 *.log
+
+# Local browser automation artifacts
+.playwright-mcp/
